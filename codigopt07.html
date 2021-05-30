@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clica no botão para escolheres a tua bebida favorita.</p>
+
+<button onclick="myFunction()">experimenta</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var texto;
+  var bebidafav = prompt("Qual é a tua bebida preferida?", "ice tea");
+  switch(bebidafav) {
+    case "vinho tinto":
+      texto = "Excelente escolha. Vinho tinto é bom para a tua alma.";
+      break;
+    case "ice tea":
+      texto = "ice tea é a minha favorita também!";
+      break;
+    case "cerveja":
+      texto = "A sério? Tens a certeza que essa é a tua bebida favorita?";
+      break;
+    default:
+      texto = "Hmmm, nunca ouvi falar dessa!";
+  }
+  document.getElementById("demo").innerHTML = texto;
+}
+</script>
+
+</body>
+</html>
